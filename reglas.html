@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Reglas — Cuyano365</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #0f0f0f;
+            color: white;
+            text-align: center;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background: #111;
+            border-bottom: 3px solid #00ff80;
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .navbar a {
+            color: #00ff80;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .navbar a:hover {
+            color: white;
+            text-shadow: 0 0 10px #00ff80;
+        }
+
+        header {
+            background: #1a1a1a;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            border-bottom: 3px solid #00ff80;
+        }
+
+        .container {
+            margin: 40px auto;
+            max-width: 900px;
+            background: #1c1c1c;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid #00ff80;
+            text-align: left;
+        }
+
+        h2 {
+            color: #00ff80;
+            text-align: center;
+        }
+
+        ul {
+            margin-top: 20px;
+            line-height: 1.7;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="partidos.html">Partidos</a></li>
+            <li><a href="historial.html">Historial</a></li>
+            <li><a href="reglas.html">Reglas</a></li>
+            <li><a href="cuycoins.html">CuyCoins</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        Reglas — Cuyano365
+    </header>
+
+    <div class="container">
+        <h2>Reglas Generales</h2>
+
+        <ul>
+            <li>Las apuestas solo son válidas si se realizan antes del inicio del partido.</li>
+            <li>El monto apostado se descuenta automáticamente de tu saldo de CuyCoins.</li>
+            <li>Las ganancias se acreditan una vez finalizado el partido y confirmados los resultados.</li>
+            <li>En caso de empate en apuestas especiales, se devuelve el monto apostado.</li>
+            <li>Las decisiones finales sobre resultados y pagos las determina la administración de Cuyano365.</li>
+            <li>El historial de apuestas se actualiza en tiempo real mediante Google Sheets.</li>
+            <li>El mal uso del sistema puede resultar en suspensión temporal o permanente.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
