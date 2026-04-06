@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CuyCoins — Cuyano365</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #0f0f0f;
+            color: white;
+            text-align: center;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background: #111;
+            border-bottom: 3px solid #00ff80;
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .navbar a {
+            color: #00ff80;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .navbar a:hover {
+            color: white;
+            text-shadow: 0 0 10px #00ff80;
+        }
+
+        header {
+            background: #1a1a1a;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            border-bottom: 3px solid #00ff80;
+        }
+
+        .container {
+            margin: 40px auto;
+            max-width: 900px;
+            background: #1c1c1c;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid #00ff80;
+            text-align: left;
+        }
+
+        h2 {
+            color: #00ff80;
+            text-align: center;
+        }
+
+        ul {
+            margin-top: 20px;
+            line-height: 1.7;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #00ff80;
+            text-align: center;
+        }
+
+        th {
+            background: #00ff80;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="partidos.html">Partidos</a></li>
+            <li><a href="historial.html">Historial</a></li>
+            <li><a href="reglas.html">Reglas</a></li>
+            <li><a href="cuycoins.html">CuyCoins</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        CuyCoins — Sistema de Moneda
+    </header>
+
+    <div class="container">
+        <h2>¿Qué son los CuyCoins?</h2>
+
+        <p>Los <strong>CuyCoins</strong> son la moneda oficial de Cuyano365. Se utilizan para realizar apuestas dentro de la liga NOIR y permiten llevar un control claro del saldo de cada jugador.</p>
+
+        <h2>Cómo funcionan</h2>
+
+        <ul>
+            <li>Cada jugador inicia con un saldo base definido por la administración.</li>
+            <li>Las apuestas descuentan automáticamente el monto apostado.</li>
+            <li>Las ganancias se acreditan al finalizar el partido.</li>
+            <li>Si una apuesta queda anulada, se devuelve el monto completo.</li>
+            <li>El historial de movimientos se registra en tiempo real.</li>
+        </ul>
+
+        <h2>Tabla de Valores</h2>
+
+        <table>
+            <tr>
+                <th>Acción</th>
+                <th>Descripción</th>
+                <th>Efecto en CuyCoins</th>
+            </tr>
+
+            <tr>
+                <td>Apuesta Ganada</td>
+                <td>Se multiplica el monto por la cuota</td>
+                <td>+ Ganancia</td>
+            </tr>
+
+            <tr>
+                <td>Apuesta Perdida</td>
+                <td>Se descuenta el monto apostado</td>
+                <td>- Monto Apostado</td>
+            </tr>
+
+            <tr>
+                <td>Apuesta Anulada</td>
+                <td>Partido suspendido o error</td>
+                <td>+ Devolución</td>
+            </tr>
+
+            <tr>
+                <td>Bono Especial</td>
+                <td>Recompensas otorgadas por la administración</td>
+                <td>+ Variable</td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+</html>
